@@ -35,3 +35,5 @@ module Jacobpenner
     config.generators.system_tests = nil
   end
 end
+
+require 'primer/view_components/engine'
