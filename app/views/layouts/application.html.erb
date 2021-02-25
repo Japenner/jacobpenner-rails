@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Jacobpenner</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+    <%= render partial: "shared/head_tags" %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_pack_tag "application" %>
@@ -11,11 +9,16 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body class="jp-Wrapper <%= "jp-Wrapper-full" if request.path == root_path %>">
     <%= render partial: "shared/navigation" %>
 
-    <main>
-      <%= yield %>
-    </main>
+    <div class="jp-Wrapper-content">
+      <main role="main" class="jp-Wrapper-main">
+        <%= yield %>
+      </main>
+
+      <footer class="jp-Footer">
+      </footer>
+    </div>
   </body>
 </html>

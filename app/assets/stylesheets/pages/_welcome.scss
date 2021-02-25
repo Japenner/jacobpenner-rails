@@ -1,0 +1,22 @@
+.jp-Welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-about {
+    font-size: 2rem;
+  }
+
+  &-container {
+    margin: $jp-main-margin;
+    color: white;
+  }
+
+  &-greeting {
+    font-size: 4.5rem;
+  }
+
+  &-name {
+    color: $jp-primary-orange;
+  }
+}
