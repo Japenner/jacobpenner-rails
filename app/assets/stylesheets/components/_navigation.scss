@@ -1,0 +1,24 @@
+.jp-Nav {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+
+  &-body {
+    align-items: right;
+    justify-content: flex-end;
+    max-width: $jp-container-width;
+    width: 100%;
+  }
+
+  &-item {
+    color: white;
+    border-bottom-width: 0.25rem;
+  }
+}
+
+.jp-Wrapper-full {
+  .jp-Nav {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
