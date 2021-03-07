@@ -1,0 +1,97 @@
+.jp-Cv {
+  &-title {
+    color: white;
+    padding-top: 2rem;
+  }
+
+  &-wrapper {
+    padding-top: 4rem;
+  }
+
+  &-about {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2rem;
+
+    &Text {
+      padding: 0 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &Avatar {
+      img {
+        border-radius: 8px;
+        display: block;
+        width: 100%;
+      }
+    }
+
+    .jp-Cv {
+      &-skillSection {
+        margin-top: auto;
+      }
+    }
+  }
+
+  &-hint {
+    font-size: 14px;
+    color: #8f96a3;
+  }
+
+  &-overview {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    width: 100%;
+
+    .jp-Cv-section {
+      padding-right: 1.5rem;
+    }
+  }
+
+  &-section {
+    width: 100%;
+    padding-bottom: 0.5rem;
+
+    &Value {
+      margin-left: auto;
+      padding: 0.25rem 0;
+
+      ul {
+        padding-left: 1rem;
+
+        li {
+          padding: 0 0 0 1.5rem;
+        }
+      }
+    }
+
+    &Column {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &-area {
+    display: flex;
+
+    &Title {
+      max-width: 33%;;
+      width: 100%;
+    }
+
+    &Column {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .jp-Cv-sectionValue {
+      margin-left: auto;
+      padding-right: 1.5rem;
+      padding-bottom: 0.5rem;
+    }
+  }
+}

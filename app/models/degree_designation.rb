@@ -1,0 +1,2 @@
+class DegreeDesignation < ApplicationRecord
+end

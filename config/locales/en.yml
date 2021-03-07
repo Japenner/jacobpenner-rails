@@ -8,6 +8,8 @@ en:
       page_title: Blog
     contact:
       page_title: Contact Me
+    cv:
+      page_title: Curriculum Vitae
     index:
       greeting_html: Hello, I'm <span class="jp-Welcome-name">Jacob Penner</span>.
       about: I'm a full stack web developer.

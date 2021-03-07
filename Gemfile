@@ -27,11 +27,13 @@ gem 'turbolinks', '~> 5'
 gem 'view_component', require: 'view_component/engine'
 gem 'webpacker', '~> 4.0'
 
-group :development, :test do
+group :development, :test, :build do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'pry'
   gem 'rspec-rails'
   gem 'rubocop-rails'
   gem 'rubocop-rspec'
+  gem 'scss_lint', require: false
 end
 
 group :development do

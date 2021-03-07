@@ -1,0 +1,283 @@
+en:
+  curriculum_vitae:
+    attributes:
+      profile:
+        first_name: Jacob
+        last_name: Penner
+        contact_info:
+          address:
+            street: 1234 Test Road
+            city: Fort Wayne
+            state: IN
+            zip: '46825'
+          email: jjjjjjjj@gmail.com
+          phone: '1232343456'
+        social_media_accounts:
+          - social_media:
+              name: 'Github'
+            link: 'https://github.com/japenner'
+          - social_media:
+              name: 'LinkedIn'
+            link: 'https://linkedin.com/japenner'
+      description: |
+        To obtain a position in the field of web development in which I can expand upon and use my existing proficiency
+        and skill in technical organization and implementation, leadership, and teamwork
+      educations:
+        organization:
+          contact_info:
+            address:
+              street:
+              city: Fort Wayne
+              state: IN
+              zip:
+            email:
+            phone:
+          name: Purdue University
+          organization_type:
+            name: University
+            tags:
+          tags:
+        degrees:
+          - end_date:
+            focus:
+              name: Computer Science
+            start_date:
+            degree_type:
+              name: Bachelors of Science
+            degree_designation:
+              name: Major
+            was_completed: true
+          - end_date:
+            focus: Business
+            start_date:
+            degree_type:
+              name: Bachelors of Science
+            degree_designation:
+              name: Minor
+            was_completed: true
+          - end_date:
+            focus: Psychology
+            start_date:
+            degree_type:
+              name: Bachelors of Science
+            degree_designation:
+              name: Minor
+            was_completed: true
+      skills:
+        - name: Windows
+          category: Operating System
+          years_experience: 5
+          score: 5
+        - name: Mac OSX
+          category: Operating System
+          years_experience: 5
+          score: 5
+        - name: Linux
+          category: Operating System
+          years_experience: 5
+          score: 5
+        - name: MySQL
+          category: Database Management
+          years_experience: 5
+          score: 5
+        - name: SQL
+          category: Database Management
+          years_experience: 5
+          score: 5
+        - name: SQL Server
+          category: Database Management
+          years_experience: 5
+          score: 5
+        - name: Ruby
+          category: Programming Language
+          years_experience: 5
+          score: 5
+        - name: C#
+          category: Programming Language
+          years_experience: 5
+          score: 5
+        - name: Java
+          category: Programming Language
+          years_experience: 5
+          score: 5
+        - name: Kotlin
+          category: Programming Language
+          years_experience: 5
+          score: 5
+        - name: HTML5
+          category: Scripting Language
+          years_experience: 5
+          score: 5
+        - name: CSS3
+          category: Scripting Language
+          years_experience: 5
+          score: 5
+        - name: JavaScript
+          category: Scripting Language
+          years_experience: 5
+          score: 5
+        - name: Typescript
+          category: Scripting Language
+          years_experience: 5
+          score: 5
+        - name: .NET Core
+          category: Framework
+          years_experience: 5
+          score: 5
+        - name: Angular
+          category: Framework
+          years_experience: 5
+          score: 5
+        - name: PrimeNG
+          category: Framework
+          years_experience: 5
+          score: 5
+        - name: Ruby on Rails
+          category: Framework
+          years_experience: 5
+          score: 5
+        - name: Twitter Bootstrap
+          category: Framework
+          years_experience: 5
+          score: 5
+        - name: AWS
+          category: Platform
+          years_experience: 5
+          score: 5
+        - name: Azure DevOps
+          category: Platform
+          years_experience: 5
+          score: 5
+        - name: Jenkins
+          category: Platform
+          years_experience: 5
+          score: 5
+        - name: Docker
+          category: Platform
+          years_experience: 5
+          score: 5
+        - name: Chef
+          category: Platform
+          years_experience: 5
+          score: 5
+        - name: TDD
+          category: Methodology
+          years_experience: 5
+          score: 5
+        - name: Kanban
+          category: Methodology
+          years_experience: 5
+          score: 5
+        - name: Scrum
+          category: Methodology
+          years_experience: 5
+          score: 5
+        - name: Agile
+          category: Methodology
+          years_experience: 5
+          score: 5
+        - name: GitFlow
+          category: Methodology
+          years_experience: 5
+          score: 5
+      employments:
+        - organization:
+            contact_info:
+              address:
+                street: 1011 Reams Fleming Blvd
+                city: Franklin
+                state: TN
+                zip: '37064'
+              email:
+              phone:
+            name: Ramsey Solutions
+            organization_type:
+              value: Employer
+          positions:
+            - title: Full Stack Web Developer
+          start_date: 5/1/2019
+          end_date: Present
+          impact: I learned a lot
+          achievements:
+            - value: Stuff
+            - value: Thangs
+        - organization:
+            contact_info:
+              address:
+                street: 200 Noll Plaza
+                city: Huntington
+                state: IN
+                zip: '46750'
+              email:
+              phone:
+            name: Our Sunday Visitor
+            organization_type:
+              value: Employer
+          positions:
+            - title: Full Stack Web Developer
+              responsibilities:
+                - value:
+            - title: Security Champion
+              responsibilities:
+                - value:
+          start_date: 9/1/2016
+          end_date: 5/1/2019
+          impact: I learned a lot
+          achievements:
+            - value: Worked with a team of 12 to develop a new platform from the ground up for organization communications, money transfers, and user management to be used by both local and international churches
+            - value: Implemented the usage of the OWASP Zap automated security suite within the main application’s deployment stack in order to monitor application security threats
+            - value: Held several training sessions on various security related topics in order to raise developer awareness of best cyber and physical security practices
+            - value: Developed instructive documentation on the topics of physical, application, and infrastructure security
+        - organization:
+            contact_info:
+              address:
+                street:
+                city: Fort Wayne
+                state: IN
+                zip:
+              email:
+              phone:
+            name: Squaremouth
+            organization_type:
+              value: Employer
+          positions:
+            - title: Full Stack Web Developer
+              responsibilities:
+                - value:
+          start_date: 12/1/2015
+          end_date: 9/1/2016
+          impact: I learned a lot
+          achievements:
+            - value: Worked with a team of 4 to develop a new customer login and configuration system using the best practices for modern Ruby on Rails and JavaScript based web applications
+            - value: Developed continuous integration tests to be used in conjunction with the Chef testing platform
+            - value: Experience in best practices with using the Docker platform
+            - value: Acted as a liaison between Squaremouth and its travel insurance carriers, interfacing directly with each carrier’s IT department if any errors, updates, or questions needed to be addressed
+            - value: Acted as “Exterminator” within a revolving schedule where I was in charge of handling all bugs and errors which would be produced during the assigned week
+        - organization:
+            contact_info:
+              address:
+                street:
+                city: Fort Wayne
+                state: IN
+                zip:
+              email:
+              phone:
+            name: Enspire Software
+            organization_type:
+              value: Employer
+          positions:
+            - title: Full Stack Software Engineer
+              responsibilities:
+                - value:
+            - title: Scrum Master
+              responsibilities:
+                - value:
+          start_date: 5/1/2014
+          end_date: 12/1/2015
+          impact: I learned a lot
+          achievements:
+            - value: Worked closely with Business Analysts to develop requirements and a production schedule for implementing an engineering database management system project as well as a real estate listing engine project
+            - value: Acted as the first Scrum master for the Ruby on Rails team and helped to instantiate best practices and security controls in following the Scrum development process as well as planned and held several kick-off, Scrum status, and retrospective meetings for the team
+            - value: Developed documentation for and built out several reusable components and modules for all of Enspire Software’s Ruby on Rails applications
+            - value: Lead and cultivated a full QA team to better assess and rectify existing application defects as well as prevent new software defects including security concerns within all Ruby on Rails web applications
+            - value: Was utilized as a designer/developer during the initial stages of a new system and upon completion of each project, acted as an ongoing support presence to maintain each project

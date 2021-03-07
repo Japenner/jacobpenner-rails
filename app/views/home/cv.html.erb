@@ -1,0 +1,10 @@
+<div class="jp-Cv-title">
+  <h1><%= t(".page_title") %></h1>
+</div>
+<div class="jp-Cv-wrapper">
+  <%= render(Primer::BorderBoxComponent.new) do |component| %>
+    <% component.slot(:body) do %>
+      <%= render ResumeComponent.new(cv: curriculum_vitae) %>
+    <% end %>
+  <% end %>
+</div>

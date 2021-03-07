@@ -1,0 +1,111 @@
+<div class="jp-Cv">
+  <div class="jp-Cv-about">
+    <div class="jp-Cv-aboutAvatar">
+      <%= image_tag(asset_path("jacob_penner_2019.jpg"), alt: "Jacob Penner", class: "jp-Cv-avatar") %>
+    </div>
+    <div class="jp-Cv-aboutText">
+      <div>
+        <h2><%= name %></h2>
+        <div class="jp-Cv-hint">Full Stack Software Developer in <%= formatted_address %></div>
+        <div><%= description %></div>
+      </div>
+      <div class="jp-Cv-skillSection">
+        <% skills.each do |skill| %>
+          <%= render(Primer::LabelComponent.new(title: skill.name)) { skill.name } %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+  <div class="jp-Cv-overview">
+    <div class="jp-Cv-section">
+      <div class="jp-Cv-sectionHeading">
+        <h2>Portfolio</h2>
+      </div>
+      <% employments.each do |employment| %>
+        <div class="jp-Cv-sectionValue">
+          <%= employment.organization.name %>
+        </div>
+        <div class="jp-Cv-hint">
+          <%= employment.skills.map(&:name).take(8).sort.join(', ') %>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="jp-Cv-section">
+      <div class="jp-Cv-sectionHeading">
+        <h2>Experience</h2>
+      </div>
+      <% top_skills.each do |skill| %>
+        <div class="jp-Cv-sectionValue jp-Cv-sectionColumn" style="">
+          <span><%= skill.name %></span>
+          <span><%= pluralize(skill.years_experience.to_i, 'year') %></span>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="jp-Cv-section">
+      <div class="jp-Cv-sectionHeading">
+        <h2>Education</h2>
+      </div>
+      <% educations.each do |education| %>
+        <div class="jp-Cv-sectionValue"><%= education.organization.name %></div>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="jp-Cv-area">
+    <div class="jp-Cv-areaTitle">
+      <h2>Employment</h2>
+    </div>
+    <div>
+      <% employments.each do |employment| %>
+      <div>
+        <%= render(Primer::TimelineItemComponent.new) do |component| %>
+          <% component.badge(bg: :blue, color: :white, icon: :briefcase) %>
+          <% component.body do %>
+            <div>
+              <h3><%= employment.positions.map(&:title).join(" | ") %></h3>
+            </div>
+            <div class="jp-Cv-hint">
+              <%= "#{employment.organization.name}: #{employment.employment_range}" %>
+            </div>
+            <div class="jp-Cv-sectionValue">
+              <ul>
+                <% employment.achievements.each do |achievement| %>
+                  <li><%= achievement.value %></li>
+                <% end %>
+              </ul>
+            </div>
+            <div class="jp-Cv-hint">
+              <span>Technologies: </span><span><%= skill_list(employment) %></span>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+
+      <% end %>
+    </div>
+  </div>
+
+  <div class="jp-Cv-area">
+    <div class="jp-Cv-areaTitle">
+      <h2>Skills</h2>
+    </div>
+    <div>
+      <div class="jp-Cv jp-Cv-areaColumn">
+        <% skills.group_by(&:skill_category).each do |category, skills| %>
+          <div class="jp-Cv-section">
+            <div class="jp-Cv-sectionHeading">
+              <h3><%= category.name %></h3>
+            </div>
+            <div class="jp-Cv-hint">
+              <%= skills.map(&:name).join(", ") %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+</div>

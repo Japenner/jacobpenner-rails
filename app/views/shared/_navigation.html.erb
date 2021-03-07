@@ -1,8 +1,9 @@
-<nav class="UnderlineNav UnderlineNav--right jp-Nav">
-  <div class="UnderlineNav-body jp-Nav-body" role="tablist">
-    <a href="<%= root_path %>" class="UnderlineNav-item jp-Nav-item" role="tab" type="button" aria-selected="<%= request.path == root_path %>">Home</a>
-    <a href="<%= about_path %>" class="UnderlineNav-item jp-Nav-item" role="tab" type="button" aria-selected="<%= request.path == about_path %>">About</a>
-    <a href="<%= blog_path %>" class="UnderlineNav-item jp-Nav-item" role="tab" type="button" aria-selected="<%= request.path == blog_path %>">Blog</a>
-    <a href="<%= contact_path %>" class="UnderlineNav-item jp-Nav-item" role="tab" type="button" aria-selected="<%= request.path == contact_path %>">Contact</a>
-  </div>
-</nav>
+<%= render(NavigationComponent.new) do |c| %>
+  <%= c.links([
+    { name: "Home", href: root_path },
+    { name: "Blog", href: blog_path },
+    { name: "CV", href: cv_path },
+    { name: "About", href: about_path },
+    { name: "Contact", href: contact_path }
+  ]) %>
+<% end %>
